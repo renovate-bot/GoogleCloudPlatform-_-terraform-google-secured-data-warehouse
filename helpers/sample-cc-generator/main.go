@@ -23,7 +23,7 @@ import (
 	"strconv"
 	"time"
 
-	gofakeit "github.com/brianvoe/gofakeit/v6"
+	gofakeit "github.com/brianvoe/gofakeit/v7"
 )
 
 const (
