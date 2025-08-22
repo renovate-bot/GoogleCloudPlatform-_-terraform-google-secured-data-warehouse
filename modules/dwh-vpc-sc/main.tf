@@ -27,7 +27,7 @@ resource "random_id" "suffix" {
 
 module "access_level_policy" {
   source      = "terraform-google-modules/vpc-service-controls/google//modules/access_level"
-  version     = "~> 5.1"
+  version     = "~> 7.0"
   policy      = var.access_context_manager_policy_id
   name        = local.access_policy_name
   description = "policy with all available options to configure"
@@ -50,7 +50,7 @@ module "access_level_policy" {
 
 module "regular_service_perimeter" {
   source                  = "terraform-google-modules/vpc-service-controls/google//modules/regular_service_perimeter"
-  version                 = "~> 5.1"
+  version                 = "~> 7.0"
   policy                  = var.access_context_manager_policy_id
   perimeter_name          = local.perimeter_name
   description             = "Secured Data Warehouse VPC Service Controls perimeter"
