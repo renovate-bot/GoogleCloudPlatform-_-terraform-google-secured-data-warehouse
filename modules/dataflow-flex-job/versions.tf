@@ -21,12 +21,12 @@ terraform {
 
     google = {
       source  = "hashicorp/google"
-      version = ">= 4.61.0, < 5.0"
+      version = ">= 4.61.0, < 7.11"
     }
 
     google-beta = {
       source  = "hashicorp/google-beta"
-      version = "< 5.0"
+      version = "< 7.11"
     }
 
     null = {
