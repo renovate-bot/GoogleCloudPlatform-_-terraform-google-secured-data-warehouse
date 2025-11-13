@@ -69,7 +69,7 @@ module "data_ingestion_topic" {
 //BigQuery org_id
 module "bigquery_dataset" {
   source  = "terraform-google-modules/bigquery/google"
-  version = "~> 6.1"
+  version = "~> 10.0"
 
   project_id                  = var.non_confidential_data_project_id
   dataset_labels              = var.labels
