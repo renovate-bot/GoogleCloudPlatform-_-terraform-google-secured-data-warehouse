@@ -390,7 +390,7 @@ resource "google_access_context_manager_service_perimeter_resource" "confidentia
 
 module "vpc_sc_bridge_data_ingestion_governance" {
   source  = "terraform-google-modules/vpc-service-controls/google//modules/bridge_service_perimeter"
-  version = "~> 5.1"
+  version = "~> 7.0"
 
   policy         = local.actual_policy
   perimeter_name = "vpc_sc_bridge_data_ingestion_governance_${random_id.suffix.hex}"
@@ -415,7 +415,7 @@ module "vpc_sc_bridge_data_ingestion_governance" {
 
 module "vpc_sc_bridge_confidential_governance" {
   source  = "terraform-google-modules/vpc-service-controls/google//modules/bridge_service_perimeter"
-  version = "~> 5.1"
+  version = "~> 7.0"
 
   policy         = local.actual_policy
   perimeter_name = "vpc_sc_bridge_confidential_governance_${random_id.suffix.hex}"
@@ -438,7 +438,7 @@ module "vpc_sc_bridge_confidential_governance" {
 
 module "vpc_sc_bridge_confidential_data_ingestion" {
   source  = "terraform-google-modules/vpc-service-controls/google//modules/bridge_service_perimeter"
-  version = "~> 5.1"
+  version = "~> 7.0"
 
   policy         = local.actual_policy
   perimeter_name = "vpc_sc_bridge_confidential_data_ingestion_${random_id.suffix.hex}"
