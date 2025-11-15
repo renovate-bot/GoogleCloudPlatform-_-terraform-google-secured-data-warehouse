@@ -1,5 +1,7 @@
 module github.com/GoogleCloudPlatform/terraform-google-secured-data-warehouse/helpers/sample-cc-generator
 
-go 1.20
+go 1.22
 
-require github.com/brianvoe/gofakeit/v6 v6.9.0
+toolchain go1.24.10
+
+require github.com/brianvoe/gofakeit/v7 v7.9.0
