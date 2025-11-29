@@ -2,4 +2,4 @@ module github.com/GoogleCloudPlatform/terraform-google-secured-data-warehouse/he
 
 go 1.20
 
-require github.com/brianvoe/gofakeit/v6 v6.9.0
+require github.com/brianvoe/gofakeit/v7 v7.10.0
