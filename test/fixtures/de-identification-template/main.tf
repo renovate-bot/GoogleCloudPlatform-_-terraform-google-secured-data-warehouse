@@ -28,7 +28,7 @@ locals {
 
 module "kms" {
   source  = "terraform-google-modules/kms/google"
-  version = "~> 2.2"
+  version = "~> 4.0"
 
   project_id           = var.data_governance_project_id[0]
   location             = local.location
