@@ -20,7 +20,7 @@ resource "random_id" "suffix" {
 
 module "dataflow_bucket" {
   source  = "terraform-google-modules/cloud-storage/google//modules/simple_bucket"
-  version = "~> 4.0"
+  version = "~> 12.0"
 
   project_id    = var.confidential_data_project_id
   labels        = var.labels
