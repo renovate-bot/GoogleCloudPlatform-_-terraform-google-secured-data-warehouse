@@ -57,7 +57,7 @@ module "dataflow_bucket" {
 //pub/sub data ingestion topic
 module "data_ingestion_topic" {
   source  = "terraform-google-modules/pubsub/google"
-  version = "~> 5.0"
+  version = "~> 8.0"
 
   project_id             = var.data_ingestion_project_id
   topic_labels           = var.labels
