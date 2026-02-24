@@ -36,7 +36,7 @@ module "dataflow_bucket" {
 
 module "bigquery_confidential_data" {
   source  = "terraform-google-modules/bigquery/google"
-  version = "~> 6.1"
+  version = "~> 10.0"
 
   dataset_id                  = var.dataset_id
   dataset_labels              = var.labels
